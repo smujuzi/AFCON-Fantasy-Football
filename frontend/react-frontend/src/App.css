@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap");
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 100%;
+}
+
+.single {
+  float: left;
+  margin-left: 50px;
+}
+
+.max {
+  position: absolute;
+  bottom: 1150px;
+  left: 300px;
+  display: none;
+}
+
+.marker {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.kit {
+  height: 40px;
+  width: 40px;
+  margin-top: -18px;
+  margin-left: 12px;
+}
+
+.timeline {
+  margin-right: 150px;
+  border: 1px black solid;
+  width: 200px;
+  height: 100px;
+}
+
+.timeline-element {
+  margin-left: 20px;
+  font-size: 15px;
+  /* border: 1px black solid;
+  width: 500px; */
+}
+
+.timeline-scenario {
+  font-size: 15px;
+}
+.timeline-player {
+  margin-right: 150px;
+}
+
+.player {
+  color: orange;
+  top: 10px;
+  font-weight: bold;
+  float: left;
+}
+
+.Button {
+  float: left;
+  height: 25px;
+  width: 45px;
+  font-size: 10px;
+  margin: 0 auto;
+}
+
+#GK {
+  height: 50px;
+  width: 330px;
+  left: 350px;
+  top: 80px;
+  position: absolute;
+  
+}
+
+#DEF {
+  height: 50px;
+  width: 580px;
+  left: 160px;
+  top: 160px;
+  position: absolute;
+  /* border: 5px black solid;  */
+}
+
+#MID {
+  height: 50px;
+  width: 580px;
+  left: 160px;
+  top: 270px;
+  position: absolute;
+  /* border: 5px black solid;  */
+}
+
+#FWD {
+  height: 50px;
+  width: 400px;
+  left: 280px;
+  top: 440px;
+  position: absolute;
+  /* border: 5px black solid;  */
+}
+
+.points {
+  margin-left: "20px";
+  margin-top: "-18px";
+}
+
+.banner {
+  width: 100%;
+  height: 268px;
+  background-image: url("./components/images/banner6.jpg");
+}
+
+.info {
+  width: 100%;
+  height: 55px;
+}
+
+.topPitchView-items {
+  float: left;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+.topPitchView {
+  height: 100%;
+  width: 290px;
+  text-align: center;
+  float: left;
+  margin-left: -2px;
+}
+
+#viewMatch {
+  margin-top: 5px;
+}
+
+.clock {
+  height: 100%;
+  width: 460px;
+  margin-left: 100px;
+  padding: 5px;
+  text-align: center;
+  float: right;
+}
+
+.timer-Container-Timeline {
+  color: black;
+  width: 100%;
+  height: 50px;
+  margin-left: 15px;
+  margin-top: 5px;
+  /* border: 2px yellow solid; */
+}
+
+.timer-Timeline {
+  width: 100%;
+  height: 30px;
+  border: 2px black solid;
+}
+
+.timer-Timeline-Score {
+  text-align: center;
+  color: green;
+}
+
+.timer-icon-Timeline {
+  font-size: 17px;
+}
+
+.timer-container {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.timer {
+  /* background-color: white; */
+  /* display: flex;
+  flex: column; */
+  /* align-items: center;
+  justify-content: center; */
+  /* padding-bottom: 7em;
+  padding-top: 2em; */
+  width: 100%;
+  height: 100%;
+  border: 1px black solid;
+}
+
+.timer div:first-child {
+  text-align: center;
+}
+
+.timer-icon {
+  font-size: 27px;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.displayClock {
+  margin-top: 20px;
+}
+
+.displayMinute {
+  margin-left: 120px;
+}
+
+.displayColon {
+  margin-left: 20px;
+}
+
+.displaySecond {
+  margin-left: 20px;
+}
+
+.timer div:first-child p {
+  color: black;
+}
+
+.timer div:last-child {
+  /* border: 1px solid white; */
+  border-radius: 3px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /* margin-top: 50px;
+  align-self: center;
+  margin-left:100px; */
+  margin: 0 auto;
+}
+
+/* #moveDown {
+
+  
+  /* margin-top:40px; */
+
+/* } */
+
+section p:first-child,
+timer div:last-child span {
+  font-size: 3em;
+  float: left;
+}
+
+@media screen and (max-width: 480px) {
+  .timer div:last-child {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 3em 1em;
+  }
+}
+
+.item {
+  float: left;
+}
+
+.screen {
+  height: 39px;
+  /* border: 1px white solid; */
+  width: 40px;
+  margin-left: 8px;
+}
+
+.number {
+  height: 50%;
+}
+
+.text {
+  margin-top: -20px;
+  height: 50%;
+}
+
+.adjustWidth {
+  float: left;
+  margin-left: 2px;
+}
+
+.line {
+  border-top: 0.01em rgb(226, 226, 226) solid;
+
+  margin: 0 auto;
+}
+
+.match {
+  margin: 0 auto;
+  /* justify-content: center; */
+  width: 70%;
+  height: 100%;
+  margin-left: 180px;
+  margin-bottom: 10px;
+}
+.match-detail {
+  float: left;
+  margin-left: 20px;
+}
+
+.match-button {
+  margin-top: 17px !important;
+}
+.team {
+  margin-top: 14px !important;
+  font-size: 20px;
+}
+.match-time {
+  border: 1px black solid;
+}
+
+.flag {
+  height: 60px;
+  width: 60px;
+}
+
+.fixture {
+  /* border: 1px black solid; */
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.fixture-title {
+  margin-left: 40%;
+}
+
+/* .footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+/* height: 150px;
+  clear:both;
+  padding-top:20px; */
+/* }  */
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
